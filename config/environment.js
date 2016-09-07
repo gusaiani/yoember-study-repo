@@ -12,6 +12,19 @@ module.exports = function(environment) {
         // e.g. 'with-controller': true
       }
     },
+    firebase: {
+      apiKey: 'AIzaSyBOAGxnsmVptsLNX8-f-ISGW7seZJUcpWg',
+      authDomain: 'library-app-ebdfb.firebaseapp.com',
+      databaseURL: 'https://library-app-ebdfb.firebaseio.com',
+      storageBucket: 'library-app-ebdfb.appspot.com',
+    },
+
+    // if using ember-cli-content-security-policy
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "self' https://*.firebaseapp.com",
+      'connect-src': "self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
 
     APP: {
       // Here you can pass flags/options to your application instance
