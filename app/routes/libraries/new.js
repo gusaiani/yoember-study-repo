@@ -18,4 +18,4 @@ export default Ember.Route.extend({
       this.controller.get('model').rollbackAttributes();
     }
   }
-})
+});
